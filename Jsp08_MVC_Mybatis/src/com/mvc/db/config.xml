@@ -9,19 +9,19 @@
 	</typeAliases>
 	
 	<environments default="development">
-    <environment id="development">
-      <transactionManager type="JDBC"/>
-      <dataSource type="POOLED">
-        <property name="driver" value="${driver}"/>
-        <property name="url" value="${url}"/>
-        <property name="username" value="${username}"/>
-        <property name="password" value="${password}"/>
-      </dataSource>
-    </environment>
-  </environments>
+	    <environment id="development">
+	      <transactionManager type="JDBC"/>
+	      <dataSource type="POOLED">
+		<property name="driver" value="${driver}"/>
+		<property name="url" value="${url}"/>
+		<property name="username" value="${username}"/>
+		<property name="password" value="${password}"/>
+	      </dataSource>
+	    </environment>
+	</environments>
   
-  <mappers>
-  	<mapper resource="com/mvc/db/mvc-mapper.xml" />
-  </mappers>
+	<mappers>
+	    <mapper resource="com/mvc/db/mvc-mapper.xml" />
+	</mappers>
   
 </configuration>
